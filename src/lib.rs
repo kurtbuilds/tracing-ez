@@ -6,7 +6,7 @@ macro_rules! span {
     ($name:expr) => {
         let span = tracing::span!(Level::INFO, $name);
         let _enter = span.enter();
-    }
+    };
     ($name:expr, $($fields:tt)*) => {
         tracing::span!(Level::INFO, $name, $($fields)*);
         let _enter = span.enter();
