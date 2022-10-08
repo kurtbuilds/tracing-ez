@@ -1,4 +1,3 @@
-pub mod export;
 pub use tracing::span as tracing_span;
 pub use tracing::{info, warn, error, debug, Level};
 
